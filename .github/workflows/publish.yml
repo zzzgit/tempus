@@ -2,7 +2,7 @@ name: Publish to npm
 on:
   push:
     tags:
-      - 'v*' # Match tags starting with 'v' 2
+      - 'v*'
 permissions:
   contents: read
   packages: write
