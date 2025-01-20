@@ -2,9 +2,9 @@
 
 > `<time>` tag plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
 
-`@@inserted@@` => `<time datetime="inserted">inserted</time>`
+`@this year@(2025)` => `<time datetime="2025">this year</time>`
 
-Markup uses the same conditions as CommonMark [emphasis](http://spec.commonmark.org/0.15/#emphasis-and-strong-emphasis).
+Markup uses the same conditions as CommonMark [link](http://spec.commonmark.org/0.15/).
 
 
 ## Install
@@ -19,7 +19,7 @@ npm install markdown-it-tempus --save
 var md = require('markdown-it')()
             .use(require('markdown-it-tempus'));
 
-md.render('@@inserted@@') // => '<p><time datetime="inserted">inserted</time></p>'
+md.render('@this year@(2025)') // => '<p><time datetime="2025">this year</time></p>'
 ```
 
 ## License
