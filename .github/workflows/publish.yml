@@ -3,6 +3,9 @@ on:
   push:
     tags:
       - 'v*' # Match tags starting with 'v' 2
+permissions:
+  contents: read
+  packages: write
 jobs:
   publish:
     runs-on: ubuntu-latest
