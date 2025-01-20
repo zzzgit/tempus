@@ -2,7 +2,7 @@
   "name": "markdown-it-tempus",
   "description": "<time> tag for markdown-it markdown parser.",
   "type": "module",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "author": "zzzgit",
   "license": "MIT",
   "main": "main.js",
