@@ -1,0 +1,37 @@
+{
+  "name": "markdown-it-tempus",
+  "description": "<time> tag for markdown-it markdown parser.",
+  "type": "module",
+  "version": "0.0.12",
+  "author": "zzzgit",
+  "license": "MIT",
+  "main": "main.js",
+  "keywords": [
+    "markdown-it",
+    "plugin",
+    "markdown",
+    "tempus",
+    "date",
+    "HTML"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzzgit/markdown-it-tempus.git"
+  },
+  "engines": {
+    "node": "20.0.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.11.0",
+    "eslint": "^9.15.0",
+    "eslint-config-janus": "^9.0.8",
+    "eslint-plugin-array-func": "^5.0.2",
+    "eslint-plugin-n": "^17.13.2",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-unicorn": "^56.0.1"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  }
+}
