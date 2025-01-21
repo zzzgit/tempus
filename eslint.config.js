@@ -1,26 +1,15 @@
 import js from 'eslint-config-janus/js.js'
+import mocha from 'eslint-config-janus/mocha.js'
+import { jsify } from 'eslint-config-janus/utils.js'
+
+const testGlob = 'test/**/*.js'
+const testTsArr = jsify(mocha, { files: [testGlob] })
 
 export default [
 	...js,
-	{
-		name: 'config.mjs',
-		files: ['*.mjs'],
-		languageOptions: {
-			sourceType: 'module',
-		},
-	},
+	...testTsArr,
 	{
 		languageOptions: {
-			globals: {
-				vscode: 'readonly',
-				workspace: 'readonly',
-				utils: 'readonly',
-				lastLine: 'writable',
-				lastDecor: 'writable',
-				maxSmallIntegerV8: 'writable',
-				setTimeout: 'readonly',
-				console: 'readonly',
-			},
 			parserOptions: {
 				sourceType: 'module',
 			},
