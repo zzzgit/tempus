@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'package.json'
+    branches: [ "main" ]
 jobs:
   test:
     runs-on: ubuntu-latest
