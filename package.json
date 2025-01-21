@@ -19,7 +19,7 @@
     "url": "https://github.com/zzzgit/markdown-it-tempus.git"
   },
   "engines": {
-    "node": "22.0.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "mocha": "mocha 'test/*'",
@@ -27,6 +27,8 @@
     "test": "npm run lint && npm run mocha"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@stylistic/eslint-plugin-js": "^2.11.0",
     "eslint": "^9.15.0",
     "eslint-config-janus": "^9.0.9",
@@ -36,6 +38,7 @@
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",
+    "husky": "^9.1.7",
     "markdown-it": "^14.1.0",
     "mocha": "^11.0.1"
   }
